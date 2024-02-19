@@ -13,14 +13,14 @@
                 '__EXPORT__': {
                     1: {
                         '_HEAD_': {
-                            'B2': 'taller_id${value or ""}#{align=left;style=text}',
+                            'B2': 'sucursal${value or ""}#{align=left;style=text}',
                         },
                         '_EXTEND_results': {
                             'A5': 'name${value or ""}#{style=text}',
                             'B5': 'fecha${value or ""}#{style=date}',
-                            'C5': 'armador${value or 0}#{style=text}',
-                            'D5': 'depto${value or 0}#{style=text}',
-                            'E5': 'dias${value or 0}#{style=number}@{sum}',
+                            'C5': 'armador${value or ""}#{style=text}',
+                            'D5': 'depto${value or ""}#{style=text}',
+                            'E5': 'dias${value or 0}#{style=number}',
                         },
                     },
                 },

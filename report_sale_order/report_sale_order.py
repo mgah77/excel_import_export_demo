@@ -29,5 +29,5 @@ class ReportSaleOrder(models.TransientModel):
         Result = self.env["taller.ot.line"]
         domain = []
         if self.taller_id:
-            domain += [("sucursal", "=", self.taller_id)]
+            domain += [("user_branch", "=", self.taller_id)]
         self.results = Result.search(domain)
