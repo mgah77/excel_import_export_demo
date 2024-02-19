@@ -11,7 +11,7 @@
         <field name="arch" type="xml">
             <xpath expr="//group[@name='criteria']" position="inside">
                 <group>
-                    <field name="partner_id" />
+                    <field name="taller_id" />
                 </group>
                 <group>
                 </group>
