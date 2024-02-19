@@ -19,7 +19,7 @@
         </field>
     </record>
     <record id="action_report_sale_order" model="ir.actions.act_window">
-        <field name="name">Sample Sales Report</field>
+        <field name="name">XLS</field>
         <field name="res_model">report.sale.order</field>
         <field name="binding_view_types">form</field>
         <field name="view_mode">form</field>
