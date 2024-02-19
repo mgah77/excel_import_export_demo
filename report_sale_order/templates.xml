@@ -13,7 +13,7 @@
                 '__EXPORT__': {
                     1: {
                         '_HEAD_': {
-                            'B2': 'sucursal${value or ""}#{align=left;style=text}',
+                            'B2': 'taller_id${value or ""}#{align=left;style=text}',
                         },
                         '_EXTEND_results': {
                             'A5': 'name${value or ""}#{style=text}',
