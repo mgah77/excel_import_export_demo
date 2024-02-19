@@ -3,11 +3,11 @@
 
     <record id="action_report_saleorder_excel" model="ir.actions.report">
         <field name="name">Quotation / Order (.xlsx)</field>
-        <field name="model">taller.maniobras</field>
+        <field name="model">taller.ot</field>
         <field name="report_type">excel</field>
         <field name="report_name">sale_order_form.xlsx</field>
         <field name="report_file">sale_order</field>
-        <field name="binding_model_id" ref="taller.model_taller_maniobras" />
+        <field name="binding_model_id" ref="taller.model_taller_ot" />
         <field name="binding_type">report</field>
         <field
             name="print_report_name"
