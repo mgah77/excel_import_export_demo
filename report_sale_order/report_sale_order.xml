@@ -32,7 +32,7 @@
     </record>
     <menuitem
         id="menu_report_sale_order"
-        parent="taller.plan_menu"
+        parent="taller.taller_menu"
         action="action_report_sale_order"
         sequence="60"
     />
