@@ -10,10 +10,13 @@ class ReportSaleOrder(models.TransientModel):
     _inherit = "xlsx.report"
 
     # Search Criteria
-    partner_id = fields.Many2one("res.partner", string="Partner")
+    #partner_id = fields.Many2one("res.partner", string="Partner")
+    taller_id = fields.Selection([
+        ('2','Ñuble'),
+        ('3','Par Vial')],string='Sucursal')
     # Report Result, sale.order
     results = fields.Many2many(
-        "sale.order",
+        "taller.ot.line",
         compute="_compute_results",
         help="Use compute fields, so there is nothing stored in database",
     )
@@ -23,8 +26,8 @@ class ReportSaleOrder(models.TransientModel):
         before export to excel, by using xlsx.export
         """
         self.ensure_one()
-        Result = self.env["sale.order"]
+        Result = self.env["taller.ot.line"]
         domain = []
-        if self.partner_id:
-            domain += [("partner_id", "=", self.partner_id.id)]
+        if self.taller_id:
+            domain += [("sucursal", "=", self.taller_id)]
         self.results = Result.search(domain)
