@@ -8,7 +8,7 @@
     "license": "AGPL-3",
     "website": "https://github.com/OCA/server-tools",
     "category": "Tools",
-    "depends": ["excel_import_export", "sale_management", "purchase", "crm"],
+    "depends": ["excel_import_export", "sale_management", "purchase", "crm", "taller"],
     "data": [
         "import_export_sale_order/actions.xml",
         "import_export_sale_order/templates.xml",
