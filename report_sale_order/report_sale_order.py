@@ -16,7 +16,7 @@ class ReportSaleOrder(models.TransientModel):
         ('3','Par Vial')],string='Sucursal')
     # Report Result, sale.order
     results = fields.Many2many(
-        "taller.ot.line",
+        "taller.ot",
         compute="_compute_results",
         help="Use compute fields, so there is nothing stored in database",
     )
@@ -29,5 +29,5 @@ class ReportSaleOrder(models.TransientModel):
         Result = self.env["taller.ot.line"]
         domain = []
         if self.taller_id:
-            domain += [("branch", "=", self.taller_id)]
+            domain += [("user_branch", "=", self.taller_id)]
         self.results = Result.search(domain)
