@@ -26,7 +26,7 @@ class ReportSaleOrder(models.TransientModel):
         before export to excel, by using xlsx.export
         """
         self.ensure_one()
-        Result = self.env["taller.ot.line"]
+        Result = self.env["taller.ot"]
         domain = []
         if self.taller_id:
             domain += [("user_branch", "=", self.taller_id)]
