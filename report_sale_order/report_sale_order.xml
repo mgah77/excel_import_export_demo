@@ -32,8 +32,8 @@
     </record>
     <menuitem
         id="menu_report_sale_order"
-        parent="excel_import_export.menu_excel_import_export"
+        parent="plan_menu"
         action="action_report_sale_order"
-        sequence="20"
+        sequence="60"
     />
 </odoo>
